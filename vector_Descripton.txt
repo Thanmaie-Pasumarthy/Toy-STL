@@ -1,0 +1,24 @@
+This is a naive attempt to replicate a generic vector container from C++ STL.
+Implements the basic operations of a vector.
+
+INPUT FORMAT:
+First line contains any one of the following operation to initialize the vector:
+1.vector c → Vector(c)
+2.vector c x → Vector(c, x)
+3.vector → Vector()
+
+Next line contains Q, the number of operations to be performed on the stack.
+
+Each of the next Q lines represents a single operation of the following format:
+push x → push(x)
+pop → pop()
+front → front()
+back → back()
+capacity → capacity()
+size → size()
+sort → sort()
+element i → operator[] 
+
+OUTPUT FORMAT:
+front,back,capacity,size,element : Prints the returned element
+sort : Prints the sorted elements
