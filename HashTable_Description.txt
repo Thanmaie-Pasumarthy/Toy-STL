@@ -1,0 +1,14 @@
+Implementing basic operations of HashTable ADT.
+We start with a HashTable of size 2. Insert elements into the HashTable. When the number of inserted elements is strictly larger than half the size of the HashTable, double its size, when the number of elements drops strictly less than the quarter the size of the table, half it.
+The HashTable uses strings as Key and Number of vowels and consonants in the key as values.
+The hash index for every key can be calculated as
+
+hashIndex = sum (letters of the word) % M
+where M is the current size of the HashTable. Collisions in HashIndex are handled using Open Addressing.
+
+INPUT AND OUTPUT FORMAT:
+N-The total number of operations. The following N lines are in the below format.
+1 "String" -> Insert the key, value pair into the Hash Table, if the key is not found already. The key will be the string given and value will be ElementType stucture with the number of consonants and vowels present in the key. No output for this command.
+2 "String" -> Search for the key "String" in the Hash Table. If found print the number of vowels and consonants stored in the ElementType. If not found print "Not Found".
+3 "String" -> Delete the key "String" from the Hash Table. No output for this command.
+4 -> Print the current size and capacity of the Hash Table.
