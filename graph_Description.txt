@@ -1,0 +1,31 @@
+Creates class 'Graph' which stores an undirected simple graph G(V, E) with |V|= n vertices. The edges are stored in an adjacency matrix.
+
+Implementes following methods and operator overloading in the class:
+
+1) Constructor : Takes “n” as parameter and initializes the adjacency matrix with all entries as “0”.
+
+2) Overload operator “+=” (G += std::pair(u, v)): Adds an edge (u, v) to the same graph object G. If the edge (u, v) is already present, do nothing.{0 <= u,v <= n-1}
+
+3) Overload operator “-=” (G -= std::pair(u, v)): Deletes an edge (u, v) from the same graph object G. If the edge (u, v) is not present, do nothing.{0 <= u,v <= n-1}
+
+4) detectCycle(): Using DFS, determines if the graph has any cycle. Returns 1 if it has a cycle, else 0. (Using recursion)
+
+5) components(): Using DFS, calculates and return the number of connected components in the graph. (Using Stack)
+
+6) reach(u, v): Checks if there is a path from u to v using DFS. Returns “1” if there is a path from u to v in the graph else 0.
+
+INPUT FORMAT:
+n - Number of vertices in the graph.
+m - Number of graph operations to be performed.
+
+Each of the next m lines represents a single graph operation of the format:
+
+add u v → G += (u, v)
+
+del u v → G -= (u, v)
+
+cycle → detectCycle()
+
+components → components()
+
+reach u v → reach(u, v)
