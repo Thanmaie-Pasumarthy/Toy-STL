@@ -1,0 +1,18 @@
+Creates class ‘Stack’ which implements a stack using a linked list.
+
+The following methods are implemented:
+Push(x): Push an integer “x” into the stack.
+Pop(): Pop the last element inserted in the stack and return it. If the stack is empty return -1.
+Top(): Return the last element inserted in the stack, but do not pop it. If the stack is empty return -1.
+isEmpty(): Return 1, if the stack is empty. Else, return 0.
+
+INPUT FORMAT:
+First line contains Q, the number of operations to be performed on the stack.
+Each of the next Q lines represents a single operation of the format:
+push x → Push(x)
+pop → Pop()
+top → Top()
+empty → isEmpty()
+
+
+
